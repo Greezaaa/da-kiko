@@ -1,26 +1,24 @@
 {
-  "name": "shared-ui",
+  "name": "da-kiko",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
-  "sourceRoot": "apps/shared-ui/src",
+  "prefix": "kiko",
+  "sourceRoot": "apps/da-kiko/src",
   "tags": [],
+
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/shared-ui",
-        "index": "apps/shared-ui/src/index.html",
-        "browser": "apps/shared-ui/src/main.ts",
+        "outputPath": "dist/apps/da-kiko",
+        "index": "apps/da-kiko/src/index.html",
+        "browser": "apps/da-kiko/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/shared-ui/tsconfig.app.json",
+        "tsConfig": "apps/da-kiko/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/shared-ui/src/favicon.ico",
-          "apps/shared-ui/src/assets"
-        ],
-        "styles": ["apps/shared-ui/src/styles.scss"],
+        "assets": ["apps/da-kiko/src/favicon.ico", "apps/da-kiko/src/assets"],
+        "styles": ["apps/da-kiko/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -51,10 +49,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "shared-ui:build:production"
+          "buildTarget": "da-kiko:build:production"
         },
         "development": {
-          "buildTarget": "shared-ui:build:development"
+          "buildTarget": "da-kiko:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -62,7 +60,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "shared-ui:build"
+        "buildTarget": "da-kiko:build"
       }
     },
     "lint": {
@@ -72,7 +70,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/shared-ui/jest.config.ts"
+        "jestConfig": "apps/da-kiko/jest.config.ts"
       }
     }
   }

@@ -1,0 +1,10 @@
+{
+  "main": {
+    "hello": "Hello",
+    "welcome_message": "Welcome to our application!"
+  },
+  "menu": {
+    "contact": "contact us",
+    "home": "home"
+  }
+}

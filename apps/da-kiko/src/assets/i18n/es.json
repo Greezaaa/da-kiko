@@ -1,0 +1,10 @@
+{
+  "main": {
+    "hello": "Hola",
+    "welcome_message": "¡Bienvenido a nuestra aplicación!"
+  },
+  "menu": {
+    "contact": "Contacta con nosotros",
+    "home": "Casita"
+  }
+}
