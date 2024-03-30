@@ -1,0 +1,11 @@
+@if(isOpen){
+@if (mode === DialogMode.login) {
+<div class="auth" [style.backgroundColor]="getBackgroundColor()">I want to be free!</div>
+} @else if(mode === DialogMode.signin) {
+<div class="auth" [style.backgroundColor]="getBackgroundColor()">Am I really free?</div>
+}
+}
+
+<button (click)="closeDialog()">Close</button>
+
+{{isOpen}}
