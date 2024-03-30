@@ -6,6 +6,28 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "import/order": [
+          "error",
+          {
+            "groups": ["builtin", "external", "internal"],
+            "pathGroups": [
+              {
+                "pattern": "@app/**",
+                "group": "internal"
+              }
+            ],
+            "newlines-between": "always"
+          }
+        ],
+        "quotes": ["error", "double"],
         "@nx/enforce-module-boundaries": [
           "error",
           {
