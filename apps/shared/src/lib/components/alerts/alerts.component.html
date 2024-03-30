@@ -1,7 +1,4 @@
-<div>
-  <div [ngClass]="">
-    <button *ngIf="true">
-      Close
-    </button>
-  </div>
+<div *ngFor="let alert of getAlerts$ | async" class="alert" [ngClass]="getAlertClass(alert.type)">
+  {{ alert.message }}
+  <button *ngIf="alert.type === AlertType.Sticky" (click)="removeAlert(alert.id)">Close</button>
 </div>

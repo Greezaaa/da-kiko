@@ -5,7 +5,8 @@ import { importProvidersFrom, isDevMode } from '@angular/core';
 import { provideStore } from '@ngrx/store';
 
 import { provideStoreDevtools } from '@ngrx/store-devtools';
-import { alertReducer } from '@lib/shared';
+import { alertReducer, AlertEffects } from '@lib/shared';
+import { provideEffects } from '@ngrx/effects';
 
 const reducers = {
   alerts: alertReducer, 
@@ -13,6 +14,7 @@ const reducers = {
 bootstrapApplication(AppComponent, {
   providers: [
     importProvidersFrom(HttpClientModule),
+    provideEffects([AlertEffects]),
     provideStore(reducers),
     provideStoreDevtools({
       maxAge: 25, 

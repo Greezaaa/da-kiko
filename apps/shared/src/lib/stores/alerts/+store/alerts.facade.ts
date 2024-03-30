@@ -3,19 +3,29 @@ import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
 import { addAlert, removeAlert } from "./alerts.actions";
 import { selectAllAlerts } from "./alerts.selectors";
-import { AlertInterface } from "./models/alerts.models";
+import { AlertInterface, AlertType } from "./models/alerts.models";
 
-@Injectable({ providedIn: 'root' })
+@Injectable({ providedIn: "root" })
 export class AlertFacade {
   alerts$: Observable<AlertInterface[]> = this.store.select(selectAllAlerts);
-
+  getAlerts$ = this.store.select(selectAllAlerts);
   constructor(private store: Store) {}
 
-  addAlert(alert: AlertInterface): void {
+  addAlert(message: string, type: AlertType): void {
+    const alert = {
+      id: this.generateUniqueId(),
+      message,
+      type,
+      duration: 3000,
+    };
     this.store.dispatch(addAlert({ alert }));
   }
 
   removeAlert(id: number): void {
     this.store.dispatch(removeAlert({ id }));
+  }
+
+  private generateUniqueId(): number {
+    return Date.now();
   }
 }
