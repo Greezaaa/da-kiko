@@ -1,0 +1,15 @@
+<p>Header works</p>
+<button (click)="change()">Clic</button>
+<button (click)="isOpen = true">Open</button>
+<lib-dialog [mode]=state [isOpen]="isOpen" (onClose)="close()"></lib-dialog>
+
+<button (click)="setLang('es')">esp</button>
+<button (click)="setLang('en')">eng</button>
+<button (click)="setLang('ge')">ger</button>
+
+<ul>
+  @for (lang of _langs; track lang.country) {
+  <button (click)="setLang(lang.country)"> <img src="{{lang.flag4x3 }}" height="10" alt="{{lang.fullName}}">
+    {{lang.fullName}}</button>
+  }
+</ul>
