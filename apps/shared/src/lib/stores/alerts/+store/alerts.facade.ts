@@ -7,8 +7,7 @@ import { AlertInterface, AlertType } from "./models/alerts.models";
 
 @Injectable({ providedIn: "root" })
 export class AlertFacade {
-  alerts$: Observable<AlertInterface[]> = this.store.select(selectAllAlerts);
-  getAlerts$ = this.store.select(selectAllAlerts);
+  alerts$ = this.store.select(selectAllAlerts);
   constructor(private store: Store) {}
 
   addAlert(message: string, type: AlertType): void {

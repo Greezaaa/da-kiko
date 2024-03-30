@@ -10,11 +10,10 @@ import { AlertFacade, AlertType } from "@lib/shared";
   imports: [NgFor, AsyncPipe, NgIf, NgClass],
 })
 export class AlertsComponent {
-  AlertType = AlertType;
   private readonly alertFacade = inject(AlertFacade);
-
+  AlertType = AlertType;
   alerts$ = this.alertFacade.alerts$;
-  getAlerts$ = this.alertFacade.getAlerts$
+  getAlerts$ = this.alertFacade.alerts$
 
   getAlertClass(type: AlertType): string {
     switch (type) {

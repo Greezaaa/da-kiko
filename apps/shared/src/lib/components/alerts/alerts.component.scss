@@ -1,4 +1,12 @@
+.alerts-wrapper {
+  position: absolute;
+  left: auto;
+  right: 10px;
+  bottom: 10px;
+  width: 300px;
+}
 .alert {
+  position: relative;
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
@@ -16,5 +24,46 @@
   background-color: lightblue;
 }
 .sticky {
-  background-color: lightgrey;
+  transition: all 200ms ease-in-out;
+  background-color: hsla(0, 0%, 83%, 0.4);
+  button {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    left: -10px;
+    top: -10px;
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid hsla(0, 0%, 83%, 0);
+    background-color: hsla(0, 0%, 83%, 0);
+    transition: all 200ms ease-in-out;
+    padding: 0;
+    align-content: center;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 1px;
+      background-color: black;
+      transform-origin: center;
+      rotate: 45deg;
+      margin: auto;
+      translate: 0.5px 0;
+    }
+    &::before {
+      rotate: -45deg;
+      translate: 0px 1px;
+    }
+  }
+  &:hover {
+    background-color: hsla(0, 0%, 83%, 1);
+    button {
+      background-color: hsla(0, 0%, 83%, 1);
+      border: 1px solid rgb(0, 0, 0);
+      opacity: 1;
+    }
+  }
 }
