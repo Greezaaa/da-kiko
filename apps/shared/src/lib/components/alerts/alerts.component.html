@@ -1,6 +1,8 @@
 <div class="alerts-wrapper">
-  <div *ngFor="let alert of getAlerts$ | async" class="alert" [ngClass]="getAlertClass(alert.type)">
-    {{ alert.message }}
+  <div *ngFor="let alert of alerts$ | async" class="alert" [ngClass]="getAlertClass(alert.type)">
+    @defer{
+    {{ alert.message | translate | async }}
+    }
     <button *ngIf="alert.type === AlertType.Sticky" (click)="removeAlert(alert.id)">&times;</button>
   </div>
 </div>

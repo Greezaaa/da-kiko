@@ -6,5 +6,12 @@
   "menu": {
     "contact": "contact us",
     "home": "home"
+  },
+  "alerts": {
+    "success": "Operation successful!",
+    "warning": "Warning: Please check your input.",
+    "error": "Error: Something went wrong.",
+    "info": "Info: Check out the latest update.",
+    "sticky": "Sticky: This message will stay until closed."
   }
 }

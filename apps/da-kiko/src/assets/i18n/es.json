@@ -6,5 +6,12 @@
   "menu": {
     "contact": "Contacta con nosotros",
     "home": "Casita"
+  },
+  "alerts": {
+    "success": "Operación exitosa!",
+    "warning": "Advertencia: Por favor, revisa tu entrada.",
+    "error": "Error: Algo salió mal.",
+    "info": "Información: Consulta la última actualización.",
+    "sticky": "Persistente: Este mensaje permanecerá hasta ser cerrado."
   }
 }

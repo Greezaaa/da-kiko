@@ -1,19 +1,17 @@
 import { AsyncPipe, NgClass, NgFor, NgIf } from "@angular/common";
 import { Component, inject } from "@angular/core";
-import { AlertFacade, AlertType } from "@lib/shared";
-
+import { AlertFacade, AlertType, TranslatePipe } from "@lib/shared";
 @Component({
   selector: "lib-alerts",
   standalone: true,
   templateUrl: "alerts.component.html",
   styleUrls: ["alerts.component.scss"],
-  imports: [NgFor, AsyncPipe, NgIf, NgClass],
+  imports: [NgFor, AsyncPipe, NgIf, NgClass, TranslatePipe],
 })
-export class AlertsComponent {
+export class AlertsLibrary {
   private readonly alertFacade = inject(AlertFacade);
   AlertType = AlertType;
   alerts$ = this.alertFacade.alerts$;
-  getAlerts$ = this.alertFacade.alerts$
 
   getAlertClass(type: AlertType): string {
     switch (type) {
