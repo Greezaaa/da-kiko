@@ -4,11 +4,11 @@
 <div>{{ 'menu.contact' | translate | async }}</div>
 <div>{{ 'main.welcome_message' | translate | async }}</div>
 
-<button (click)="addAlert('Operation successful!', AlertType.Success)">Add success alert</button>
-<button (click)="addAlert('Warning: Please check your input.', AlertType.Warning)">Add warning alert</button>
-<button (click)="addAlert('Error: Something went wrong.', AlertType.Error)">Add error alert</button>
-<button (click)="addAlert('Info: Check out the latest update.', AlertType.Info)">Add info alert</button>
-<button (click)="addAlert('Sticky: This message will stay until closed.', AlertType.Sticky)">Add sticky alert</button>
+<button (click)="addAlert('alerts.success', AlertType.Success)">Add success alert</button>
+<button (click)="addAlert('alerts.warning', AlertType.Warning)">Add warning alert</button>
+<button (click)="addAlert('alerts.error', AlertType.Error)">Add error alert</button>
+<button (click)="addAlert('alerts.info', AlertType.Info)">Add info alert</button>
+<button (click)="addAlert('alerts.sticky', AlertType.Sticky)">Add sticky alert</button>
 
 
 <lib-alerts></lib-alerts>

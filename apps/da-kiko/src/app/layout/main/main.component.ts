@@ -2,7 +2,7 @@ import { CommonModule } from "@angular/common";
 import { Component, inject } from "@angular/core";
 import {
   AlertFacade,
-  AlertsComponent,
+  AlertsLibrary,
   AlertType,
   TranslatePipe,
 } from "@lib/shared";
@@ -11,7 +11,7 @@ import {
   standalone: true,
   selector: "kiko-layout-main",
   templateUrl: "./main.component.html",
-  imports: [TranslatePipe, CommonModule, AlertsComponent],
+  imports: [TranslatePipe, CommonModule, AlertsLibrary],
 })
 export class LayoutMainComponent {
   private readonly alertFacade = inject(AlertFacade);
