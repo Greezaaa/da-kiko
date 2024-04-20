@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { DialogLibrary, DialogMode, SetPreferencesLibrary } from "@lib/shared";
+
 import { languages } from '../../extras/languages';
 @Component({
   standalone: true,
@@ -7,7 +8,7 @@ import { languages } from '../../extras/languages';
   templateUrl: "./header.component.html",
   imports: [DialogLibrary]
 })
-export class LayoutHeaderComponent  {
+export class LayoutHeaderComponent implements OnInit  {
   
 constructor(private _sP: SetPreferencesLibrary) { }
   public _langs = languages
@@ -17,7 +18,7 @@ ngOnInit(): void {
   }
 
   state: DialogMode = 0;
-  isOpen: boolean = false;
+  isOpen = false;
   
   getPreferences() {
    this._sP.getUserSettings() 
