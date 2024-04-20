@@ -3,7 +3,7 @@ import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
 import { addAlert, removeAlert } from "./alerts.actions";
 import { selectAllAlerts } from "./alerts.selectors";
-import { AlertInterface, AlertType } from "./models/alerts.models";
+import { AlertInterface, AlertType } from "./models/alerts.model";
 
 @Injectable({ providedIn: "root" })
 export class AlertFacade {

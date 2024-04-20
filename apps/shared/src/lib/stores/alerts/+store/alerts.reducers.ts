@@ -1,5 +1,5 @@
 import { createReducer, on } from "@ngrx/store";
-import { AlertInterface } from "./models/alerts.models";
+import { AlertInterface } from "./models/alerts.model";
 import { addAlert, removeAlert } from "./alerts.actions";
 
 export interface AlertState {

@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve da-kiko -o",
+    "start:da-kiko": "nx serve da-kiko -o",
     "build": "nx build da-kiko --prod",
     "test": "nx test",
     "test:da-kiko": "nx test da-kiko",

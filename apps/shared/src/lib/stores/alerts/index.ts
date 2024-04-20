@@ -5,4 +5,4 @@ export * from './+store/alerts.facade';
 export * from './+store/alerts.effects';
 
 // INTERFASES
-export * from './+store/models/alerts.models';
+export * from './+store/models/alerts.model';

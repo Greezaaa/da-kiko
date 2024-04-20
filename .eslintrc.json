@@ -1,7 +1,7 @@
 {
   "root": true,
   "ignorePatterns": ["**/*"],
-  "plugins": ["@nx"],
+  "plugins": ["@nx", "import"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -10,7 +10,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "app",
+            "prefix": "kiko-layout",
             "style": "kebab-case"
           }
         ],

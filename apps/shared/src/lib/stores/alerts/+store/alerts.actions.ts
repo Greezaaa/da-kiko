@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { AlertInterface } from './models/alerts.models';
+import { AlertInterface } from './models/alerts.model';
 
 export const addAlert = createAction(
   '[Alert] Add Alert',
