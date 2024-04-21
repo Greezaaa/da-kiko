@@ -1,14 +1,27 @@
 [
   {
     "id": 1,
-    "name": "pizzas"
+    "name": "pizzas",
+    "imageUrl": ""
   },
   {
     "id": 2,
-    "name": "pastas"
+    "name": "pastas",
+    "imageUrl": ""
   },
   {
     "id": 3,
-    "name": "desserts"
+    "name": "desserts",
+    "imageUrl": ""
+  },
+  {
+    "id": 4,
+    "name": "extras",
+    "imageUrl": ""
+  },
+  {
+    "id": 5,
+    "name": "drinks",
+    "imageUrl": ""
   }
 ]

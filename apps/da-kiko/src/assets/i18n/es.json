@@ -4,22 +4,118 @@
     "welcome_message": "¡Bienvenido a nuestra aplicación!"
   },
   "nav": {
-    "contact": "Contacta con nosotros",
-    "home": "Casita"
+    "contact": "Contáctanos",
+    "home": "Inicio"
   },
   "alerts": {
-    "success": "Operación exitosa!",
-    "warning": "Advertencia: Por favor, revisa tu entrada.",
+    "success": "¡Operación exitosa!",
+    "warning": "Advertencia: Por favor revisa tu entrada.",
     "error": "Error: Algo salió mal.",
     "info": "Información: Consulta la última actualización.",
-    "sticky": "Persistente: Este mensaje permanecerá hasta ser cerrado."
+    "sticky": "Permanente: Este mensaje se mantendrá hasta que se cierre."
   },
   "menu": {
-    "menu": "Nuestra carta",
+    "menu": "Explora Nuestro Menú",
+    "ingredients": {
+      "name": "Ingredientes",
+      "tooltip": "Selecciona ingredientes para incluir en tu plato. Personalizaremos el plato según tus preferencias.",
+      "tomato": "Tomate",
+      "chicken": "Pollo",
+      "basil": "Albahaca",
+      "mozzarella": "Mozzarella",
+      "spaghetti": "Espagueti"
+    },
+    "allergens": {
+      "name": "Alérgenos",
+      "tooltip": "Selecciona alérgenos para excluir de tus platos. Esto ayuda a prevenir reacciones alérgicas.",
+      "gluten": {
+        "name": "Gluten",
+        "description": "Incluye alimentos que contienen gluten, como la mayoría de cereales, panes y pastas."
+      },
+      "fish": {
+        "name": "Pescado",
+        "description": "Incluye todos los tipos de pescado. Importante para personas con alergias al pescado."
+      },
+      "crustaceans": {
+        "name": "Crustáceos",
+        "description": "Incluye camarones, cangrejos, langostas y otros crustáceos."
+      },
+      "eggs": {
+        "name": "Huevos",
+        "description": "Presente en muchos platos y productos horneados, la alergia a los huevos es común."
+      },
+      "soy": {
+        "name": "Soja",
+        "description": "Frecuentemente usada en productos procesados y salsas."
+      },
+      "peanuts": {
+        "name": "Cacahuetes",
+        "description": "Alérgeno común que puede causar reacciones severas."
+      },
+      "tree_nuts": {
+        "name": "Frutos secos",
+        "description": "Incluye almendras, avellanas, nueces, anacardos, pistachos, nueces de macadamia y nueces de Brasil."
+      },
+      "dairy": {
+        "name": "Lácteos",
+        "description": "Incluye leche y productos lácteos como queso, mantequilla y yogur."
+      },
+      "mustard": {
+        "name": "Mostaza",
+        "description": "Comúnmente utilizada en salsas y aderezos."
+      },
+      "celery": {
+        "name": "Apio",
+        "description": "Incluye tanto el apio fresco como derivados utilizados en alimentos procesados."
+      },
+      "sulfites": {
+        "name": "Sulfitos",
+        "description": "Comúnmente usados como conservantes en alimentos y bebidas."
+      },
+      "sesame": {
+        "name": "Sésamo",
+        "description": "Puede encontrarse en panes, galletas y productos de tahini."
+      },
+      "lupin": {
+        "name": "Altramuz",
+        "description": "A menudo utilizado en harinas y algunas carnes procesadas."
+      },
+      "molluscs": {
+        "name": "Moluscos",
+        "description": "Incluye caracoles, almejas, ostras y mejillones."
+      },
+      "spicy": {
+        "name": "Picante",
+        "description": "Alimentos que contienen especias o pimientos que proporcionan un sabor picante."
+      }
+    },
+    "dishes": {
+      "name": "Platos",
+      "tooltip": "Navega a través de nuestra variedad de platos."
+    },
     "category": {
-      "pizzas": "Las mejores pizzas",
-      "pastas": "Pasta a tu gusto",
-      "desserts": "Algo dulce para terminar"
+      "name": "Categorías",
+      "tooltip": "Selecciona una categoría para ver los platos disponibles.",
+      "pizzas": {
+        "name": "Pizzas",
+        "description": "Pizzas deliciosamente artesanales horneadas a la perfección con ingredientes frescos y una variedad de toppings a elegir."
+      },
+      "pastas": {
+        "name": "Pasta",
+        "description": "Explora nuestra gama de platos de pasta clásicos y contemporáneos, cada uno preparado con pasta fresca y las mejores salsas."
+      },
+      "extras": {
+        "name": "Extras",
+        "description": "Añade el complemento perfecto a tu comida con nuestra selección de extras, incluyendo palitos de pan, salsas y más."
+      },
+      "desserts": {
+        "name": "Postres",
+        "description": "Indúlgate con nuestros decadentes postres, una manera perfecta de concluir tu comida. Elige de nuestra selección de pasteles, pastas y helados."
+      },
+      "drinks": {
+        "name": "Bebidas",
+        "description": "Sacia tu sed con nuestra variedad de bebidas. Desde cafés calientes hasta cócteles refrescantes, tenemos bebidas para satisfacer todos los gustos."
+      }
     }
   }
 }

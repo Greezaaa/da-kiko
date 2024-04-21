@@ -4,8 +4,8 @@
     "welcome_message": "Welcome to our application!"
   },
   "nav": {
-    "contact": "contact us",
-    "home": "home"
+    "contact": "Contact Us",
+    "home": "Home"
   },
   "alerts": {
     "success": "Operation successful!",
@@ -15,11 +15,107 @@
     "sticky": "Sticky: This message will stay until closed."
   },
   "menu": {
-    "menu": "Our menu",
+    "menu": "Explore Our Menu",
+    "ingredients": {
+      "name": "Ingredients",
+      "tooltip": "Select ingredients to include in your dish. We'll tailor the dish to your preference.",
+      "tomato": "Tomato",
+      "chicken": "Chicken",
+      "basil": "Basil",
+      "mozzarella": "Mozzarella",
+      "spaghetti": "Spaghetti"
+    },
+    "allergens": {
+      "name": "Allergens",
+      "tooltip": "Select allergens to exclude from your dishes. This helps in preventing allergic reactions.",
+      "gluten": {
+        "name": "Gluten",
+        "description": "Includes foods that contain gluten, such as most cereals, breads, and pastas."
+      },
+      "fish": {
+        "name": "Fish",
+        "description": "Covers all types of fish. Important for people with fish allergies."
+      },
+      "crustaceans": {
+        "name": "Crustaceans",
+        "description": "Includes shrimp, crabs, lobster, and other crustaceans."
+      },
+      "eggs": {
+        "name": "Eggs",
+        "description": "Present in many dishes and baked products, egg allergy is common."
+      },
+      "soy": {
+        "name": "Soy",
+        "description": "Frequently used in processed products and sauces."
+      },
+      "peanuts": {
+        "name": "Peanuts",
+        "description": "Common allergen that can cause severe reactions."
+      },
+      "tree_nuts": {
+        "name": "Tree Nuts",
+        "description": "Includes almonds, hazelnuts, walnuts, cashews, pistachios, macadamia nuts, and Brazil nuts."
+      },
+      "dairy": {
+        "name": "Dairy",
+        "description": "Includes milk and dairy products such as cheese, butter, and yogurt."
+      },
+      "mustard": {
+        "name": "Mustard",
+        "description": "Commonly used in sauces and dressings."
+      },
+      "celery": {
+        "name": "Celery",
+        "description": "Includes both fresh celery and derivatives used in processed foods."
+      },
+      "sulfites": {
+        "name": "Sulfites",
+        "description": "Commonly used as preservatives in foods and drinks."
+      },
+      "sesame": {
+        "name": "Sesame",
+        "description": "Can be found in breads, cookies, and tahini products."
+      },
+      "lupin": {
+        "name": "Lupin",
+        "description": "Often used in flours and some processed meats."
+      },
+      "molluscs": {
+        "name": "Molluscs",
+        "description": "Includes snails, clams, oysters, and mussels."
+      },
+      "spicy": {
+        "name": "Spicy",
+        "description": "Foods containing spices or peppers that provide a spicy flavor."
+      }
+    },
+    "dishes": {
+      "name": "Dishes",
+      "tooltip": "Browse through our variety of dishes."
+    },
     "category": {
-      "pizzas": "Pizzas",
-      "pastas": "Pasta",
-      "desserts": "Sweet finish or something like that"
+      "name": "Categories",
+      "tooltip": "Select a category to view the dishes available.",
+      "pizzas": {
+        "name": "Pizzas",
+        "description": "Deliciously handcrafted pizzas baked to perfection with fresh ingredients and a variety of toppings to choose from."
+      },
+      "pastas": {
+        "name": "Pasta",
+        "description": "Explore our range of classic and contemporary pasta dishes, each prepared with fresh pasta and the finest sauces."
+      },
+      "extras": {
+        "name": "Extras",
+        "description": "Add the perfect complement to your meal with our selection of extras, including breadsticks, sauces, and more."
+      },
+      "desserts": {
+        "name": "Desserts",
+        "description": "Indulge in our decadent desserts, a perfect way to conclude your meal. Choose from our selection of cakes, pastries, and ice creams."
+      },
+      "drinks": {
+        "name": "Drinks",
+        "description": "Quench your thirst with our assortment of beverages. From hot coffees to refreshing cocktails, we have drinks to suit all tastes."
+      }
     }
   }
 }

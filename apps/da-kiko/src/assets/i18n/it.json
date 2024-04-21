@@ -1,0 +1,121 @@
+{
+  "main": {
+    "hello": "Ciao",
+    "welcome_message": "Benvenuti nella nostra applicazione!"
+  },
+  "nav": {
+    "contact": "contattaci",
+    "home": "home"
+  },
+  "alerts": {
+    "success": "Operazione riuscita!",
+    "warning": "Attenzione: Si prega di controllare il proprio input.",
+    "error": "Errore: Qualcosa è andato storto.",
+    "info": "Info: Guarda l'ultimo aggiornamento.",
+    "sticky": "Permanente: Questo messaggio rimarrà fino alla chiusura."
+  },
+  "menu": {
+    "menu": "Esplora il Nostro Menù",
+    "ingredients": {
+      "name": "Ingredienti",
+      "tooltip": "Seleziona gli ingredienti da includere nel tuo piatto. Personalizzeremo il piatto secondo le tue preferenze.",
+      "tomato": "Pomodoro",
+      "chicken": "Pollo",
+      "basil": "Basilico",
+      "mozzarella": "Mozzarella",
+      "spaghetti": "Spaghetti"
+    },
+    "allergens": {
+      "name": "Allergeni",
+      "tooltip": "Seleziona gli allergeni per escludere i piatti che li contengono. Questo aiuta a prevenire reazioni allergiche.",
+      "gluten": {
+        "name": "Glutine",
+        "description": "Include alimenti che contengono glutine, come la maggior parte dei cereali, pane e pasta."
+      },
+      "fish": {
+        "name": "Pesce",
+        "description": "Copre tutti i tipi di pesce. Importante per le persone con allergie al pesce."
+      },
+      "crustaceans": {
+        "name": "Crostacei",
+        "description": "Include gamberi, granchi, aragoste e altri crostacei."
+      },
+      "eggs": {
+        "name": "Uova",
+        "description": "Presente in molti piatti e prodotti da forno, l'allergia alle uova è comune."
+      },
+      "soy": {
+        "name": "Soia",
+        "description": "Frequentemente utilizzata in prodotti lavorati e salse."
+      },
+      "peanuts": {
+        "name": "Arachidi",
+        "description": "Allergene comune che può causare reazioni gravi."
+      },
+      "tree_nuts": {
+        "name": "Frutta a guscio",
+        "description": "Include mandorle, nocciole, noci, anacardi, pistacchi, noci di macadamia e noci del Brasile."
+      },
+      "dairy": {
+        "name": "Latticini",
+        "description": "Include latte e prodotti lattiero-caseari come formaggio, burro e yogurt."
+      },
+      "mustard": {
+        "name": "Senape",
+        "description": "Comunemente usata in salse e condimenti."
+      },
+      "celery": {
+        "name": "Sedano",
+        "description": "Include sia il sedano fresco sia derivati usati in alimenti lavorati."
+      },
+      "sulfites": {
+        "name": "Solfiti",
+        "description": "Comunemente usati come conservanti negli alimenti e nelle bevande."
+      },
+      "sesame": {
+        "name": "Sesamo",
+        "description": "Può essere trovato in pani, biscotti e prodotti di tahini."
+      },
+      "lupin": {
+        "name": "Lupino",
+        "description": "Spesso utilizzato in farine e alcuni tipi di carni lavorate."
+      },
+      "molluscs": {
+        "name": "Molluschi",
+        "description": "Include lumache, vongole, ostriche e cozze."
+      },
+      "spicy": {
+        "name": "Piccante",
+        "description": "Alimenti contenenti spezie o peperoni che forniscono un sapore piccante."
+      }
+    },
+    "dishes": {
+      "name": "Piatti",
+      "tooltip": "Sfoglia la nostra varietà di piatti."
+    },
+    "category": {
+      "name": "Categorie",
+      "tooltip": "Seleziona una categoria per visualizzare i piatti disponibili.",
+      "pizzas": {
+        "name": "Pizze",
+        "description": "Pizze deliziosamente artigianali cotte alla perfezione con ingredienti freschi e una varietà di condimenti da scegliere."
+      },
+      "pastas": {
+        "name": "Paste",
+        "description": "Esplora la nostra gamma di piatti di pasta classici e contemporanei, ognuno preparato con pasta fresca e le migliori salse."
+      },
+      "extras": {
+        "name": "Extra",
+        "description": "Aggiungi il complemento perfetto al tuo pasto con la nostra selezione di extra, inclusi grissini, salse e altro ancora."
+      },
+      "desserts": {
+        "name": "Dolci",
+        "description": "Indulgi nei nostri dolci decadenti, il modo perfetto per concludere il tuo pasto. Scegli dalla nostra selezione di torte, pasticceria e gelati."
+      },
+      "drinks": {
+        "name": "Bevande",
+        "description": "Dissetati con la nostra assortimento di bevande. Da caffè caldi a cocktail rinfrescanti, abbiamo bevande per soddisfare tutti i gusti."
+      }
+    }
+  }
+}
