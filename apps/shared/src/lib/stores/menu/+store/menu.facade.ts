@@ -1,11 +1,17 @@
-import { Injectable } from "@angular/core";
-import { Store } from "@ngrx/store";
+import { Injectable } from '@angular/core';
+import { Store } from '@ngrx/store';
 
-import { loadCategories, loadDishes, loadIngredients, loadAllergens, filterDishes } from "./menu.actions";
-import { selectAllCategories, selectAllDishes, selectFilteredDishes, selectAllIngredients, selectAllAllergens } from "./menu.selectors";
+import { loadCategories, loadDishes, loadIngredients, loadAllergens, filterDishes } from './menu.actions';
+import {
+  selectAllCategories,
+  selectAllDishes,
+  selectFilteredDishes,
+  selectAllIngredients,
+  selectAllAllergens,
+} from './menu.selectors';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MenuFacade {
   categories$ = this.store.select(selectAllCategories);

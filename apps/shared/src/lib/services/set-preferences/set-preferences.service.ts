@@ -1,6 +1,7 @@
-import { Injectable } from "@angular/core";
-import { ThemeColor, UserSettings } from "@lib/shared";
-import { BehaviorSubject } from "rxjs";
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+
+import { UserSettings, ThemeColor } from '../../models';
 @Injectable({
   providedIn: 'root',
 })
@@ -14,7 +15,7 @@ export class SetPreferencesLibrary {
   }
   //SETTERS
   private loadUserSettings() {
-    const settingsFromStorage = localStorage.getItem("userSettings");
+    const settingsFromStorage = localStorage.getItem('userSettings');
     if (settingsFromStorage) {
       this.userSettings = JSON.parse(settingsFromStorage);
     } else {
@@ -23,16 +24,12 @@ export class SetPreferencesLibrary {
   }
   private detectAndSetUserPreferences() {
     this.userSettings.lang = navigator.language;
-    const prefersDarkScheme = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    this.userSettings.theme = prefersDarkScheme
-      ? ThemeColor.Dark
-      : ThemeColor.Light;
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    this.userSettings.theme = prefersDarkScheme ? ThemeColor.Dark : ThemeColor.Light;
     this.saveUserSettings();
   }
   private saveUserSettings() {
-    localStorage.setItem("userSettings", JSON.stringify(this.userSettings));
+    localStorage.setItem('userSettings', JSON.stringify(this.userSettings));
   }
   // GETTERS
   public setUserPreferredLang(lang: string) {

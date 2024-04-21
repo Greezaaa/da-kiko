@@ -1,6 +1,6 @@
-import { createFeatureSelector, createSelector } from "@ngrx/store";
+import { createFeatureSelector, createSelector } from '@ngrx/store';
 
-import { MenuState } from "./models/menu.model";
+import { MenuState } from './models/menu.model';
 
 export const selectMenuState = createFeatureSelector<MenuState>('menu');
 

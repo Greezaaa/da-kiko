@@ -1,14 +1,54 @@
-@if(categories){
-@defer {
-<p>{{'menu.menu' | translate | async}}</p>
-<!-- {{categories | json}} -->
-@for( category of categories; track category.id){
-
-{{ getTranslation('category' ,category.name) | translate | async }}
-}
-} @loading (minimum 1000ms){
-Loading data, please wait
-}
+@if(categories){ 
+  @defer {
+  <p>{{ "menu.categories" | translate | async }}</p>
+    @for( category of categories; track category.id){
+      {{ getTranslation("category", category.name) | translate | async }}
+    } 
+  } @loading (minimum 1000ms){ 
+    Loading data, please wait 
+  } 
 } @else {
-<p>No data were found, contact with as please</p>
+  <p>No data were found, contact with as please</p>
+}
+
+@if(ingredients){ 
+  @defer {
+  <p>{{ "menu.ingredients" | translate | async }}</p>
+  {{ingredients | json}}
+    @for( ingredient of ingredients; track ingredient.id){
+      {{ getTranslation("allergen", ingredient.name) | translate | async }}
+    } 
+  } @loading (minimum 1000ms){ 
+    Loading data, please wait 
+  } 
+} @else {
+  <p>No data were found, contact with as please</p>
+}
+
+@if(allergens){ 
+  @defer {
+  <p>{{ "menu.allergens" | translate | async }}</p>
+  {{allergens | json}}
+    @for( allergen of allergens; track allergen.id){
+      {{ getTranslation("allergen", allergen.name) | translate | async }}
+    } 
+  } @loading (minimum 1000ms){ 
+    Loading data, please wait 
+  } 
+} @else {
+  <p>No data were found, contact with as please</p>
+}
+
+@if(dishes){ 
+  @defer {
+  <p>{{ "menu.dishes" | translate | async }}</p>
+  {{dishes | json}}
+    @for( dish of dishes; track dish.id){
+      {{ getTranslation("allergen", dish.name) | translate | async }}
+    } 
+  } @loading (minimum 1000ms){ 
+    Loading data, please wait 
+  } 
+} @else {
+  <p>No data were found, contact with as please</p>
 }
