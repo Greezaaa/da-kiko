@@ -1,17 +1,6 @@
-@if(categories){ 
-  @defer {
-  <p>{{ "menu.categories" | translate | async }}</p>
-    @for( category of categories; track category.id){
-      {{ getTranslation("category", category.name) | translate | async }}
-    } 
-  } @loading (minimum 1000ms){ 
-    Loading data, please wait 
-  } 
-} @else {
-  <p>No data were found, contact with as please</p>
-}
+<kiko-carta-categories></kiko-carta-categories>
 
-@if(ingredients){ 
+<!-- @if(ingredients){ 
   @defer {
   <p>{{ "menu.ingredients" | translate | async }}</p>
   {{ingredients | json}}
@@ -23,9 +12,9 @@
   } 
 } @else {
   <p>No data were found, contact with as please</p>
-}
+} -->
 
-@if(allergens){ 
+<!-- @if(allergens){ 
   @defer {
   <p>{{ "menu.allergens" | translate | async }}</p>
   {{allergens | json}}
@@ -37,9 +26,9 @@
   } 
 } @else {
   <p>No data were found, contact with as please</p>
-}
+} -->
 
-@if(dishes){ 
+<!-- @if(dishes){ 
   @defer {
   <p>{{ "menu.dishes" | translate | async }}</p>
   {{dishes | json}}
@@ -51,4 +40,4 @@
   } 
 } @else {
   <p>No data were found, contact with as please</p>
-}
+} -->
