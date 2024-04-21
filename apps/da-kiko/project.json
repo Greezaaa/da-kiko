@@ -18,7 +18,7 @@
         "tsConfig": "apps/da-kiko/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/da-kiko/src/favicon.ico", "apps/da-kiko/src/assets"],
-        "styles": ["apps/da-kiko/src/styles.scss"],
+        "styles": ["apps/da-kiko/src/assets/styles/styles.scss"],
         "scripts": []
       },
       "configurations": {

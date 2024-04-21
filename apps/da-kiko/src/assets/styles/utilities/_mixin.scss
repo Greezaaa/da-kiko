@@ -1,11 +1,11 @@
 // @include size(20, 40);
 @mixin size($w, $h: $w) {
-  @if type-of($w) == "number" {
+  @if type-of($w) == 'number' {
     width: $w + px;
   } @else {
     width: $w;
   }
-  @if type-of($h) == "number" {
+  @if type-of($h) == 'number' {
     height: $h + px;
   } @else {
     height: $h;

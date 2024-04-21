@@ -1,7 +1,10 @@
 // @forward "utilities/variables";
+@forward './abstracts/colors';
+@forward './utilities/functions';
 :root {
   --base: #cfcfcf;
   --text: #212121;
+  --color-accent: #06557c;
 }
 
 @media (prefers-color-scheme: dark) {
