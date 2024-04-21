@@ -1,8 +1,9 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { SetPreferencesLibrary } from "@lib/shared";
 import { of, Observable } from "rxjs";
 import { catchError, tap } from "rxjs/operators";
+
+import { SetPreferencesLibrary } from '../set-preferences/set-preferences.service';
 
 @Injectable({
   providedIn: "root",
@@ -48,7 +49,7 @@ export class TranslationService {
   }
 
   translate(key: string): Observable<string> {
-    let translation = key
+    const translation = key
       .split(".")
       .reduce((acc, part) => acc && acc[part], this.translations);
     return of(translation || key);

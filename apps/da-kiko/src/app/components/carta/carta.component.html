@@ -1,0 +1,14 @@
+@if(categories){
+@defer {
+<p>{{'menu.menu' | translate | async}}</p>
+<!-- {{categories | json}} -->
+@for( category of categories; track category.id){
+
+{{ getTranslation('category' ,category.name) | translate | async }}
+}
+} @loading (minimum 1000ms){
+Loading data, please wait
+}
+} @else {
+<p>No data were found, contact with as please</p>
+}

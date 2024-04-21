@@ -1,6 +1,8 @@
 import { Injectable } from "@angular/core";
-import { AlertInterface, TranslationService } from "@lib/shared";
 import { BehaviorSubject } from "rxjs";
+
+import { AlertInterface } from "../../stores";
+import { TranslationService } from "../translator/translator.service";
 
 @Injectable({
   providedIn: "root",

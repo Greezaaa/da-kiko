@@ -7,11 +7,13 @@ import {
   TranslatePipe,
 } from "@lib/shared";
 
+import { CartaComponent } from "../../components/carta/carta.component";
+
 @Component({
   standalone: true,
   selector: "kiko-layout-main",
   templateUrl: "./main.component.html",
-  imports: [TranslatePipe, CommonModule, AlertsLibrary],
+  imports: [TranslatePipe, CommonModule, AlertsLibrary, CartaComponent],
 })
 export class LayoutMainComponent {
   private readonly alertFacade = inject(AlertFacade);

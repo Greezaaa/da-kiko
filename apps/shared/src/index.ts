@@ -8,6 +8,7 @@ export * from './lib/models/';
 export * from './lib/services/translator/translator.service';
 export * from './lib/services/set-preferences/set-preferences.service';
 export * from './lib/services/alerts/alerts.service';
+export * from './lib/services/menu/menu.service';
 /* PIPES */
 export * from './lib/pipes/translate.pipe'
 /* STORES */

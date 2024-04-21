@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Tomato Soup",
+    "categoryId": 1,
+    "ingredients": [1],
+    "allergens": []
+  },
+  {
+    "id": 2,
+    "name": "Chicken Parmesan",
+    "categoryId": 2,
+    "ingredients": [2, 3, 4],
+    "allergens": [3]
+  },
+  {
+    "id": 3,
+    "name": "Cheese Cake",
+    "categoryId": 3,
+    "ingredients": [4],
+    "allergens": [3]
+  },
+  {
+    "id": 4,
+    "name": "Craft Beer",
+    "categoryId": 4,
+    "ingredients": [],
+    "allergens": [2]
+  }
+]

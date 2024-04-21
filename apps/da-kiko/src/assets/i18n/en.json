@@ -3,7 +3,7 @@
     "hello": "Hello",
     "welcome_message": "Welcome to our application!"
   },
-  "menu": {
+  "nav": {
     "contact": "contact us",
     "home": "home"
   },
@@ -13,5 +13,13 @@
     "error": "Error: Something went wrong.",
     "info": "Info: Check out the latest update.",
     "sticky": "Sticky: This message will stay until closed."
+  },
+  "menu": {
+    "menu": "Our menu",
+    "category": {
+      "pizzas": "Pizzas",
+      "pastas": "Pasta",
+      "desserts": "Sweet finish or something like that"
+    }
   }
 }

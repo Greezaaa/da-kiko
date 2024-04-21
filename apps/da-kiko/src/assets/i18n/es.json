@@ -3,7 +3,7 @@
     "hello": "Hola",
     "welcome_message": "¡Bienvenido a nuestra aplicación!"
   },
-  "menu": {
+  "nav": {
     "contact": "Contacta con nosotros",
     "home": "Casita"
   },
@@ -13,5 +13,13 @@
     "error": "Error: Algo salió mal.",
     "info": "Información: Consulta la última actualización.",
     "sticky": "Persistente: Este mensaje permanecerá hasta ser cerrado."
+  },
+  "menu": {
+    "menu": "Nuestra carta",
+    "category": {
+      "pizzas": "Las mejores pizzas",
+      "pastas": "Pasta a tu gusto",
+      "desserts": "Algo dulce para terminar"
+    }
   }
 }
