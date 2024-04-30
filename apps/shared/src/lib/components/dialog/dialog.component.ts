@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { DialogMode } from '@lib/shared';
+
+import { DialogMode } from '../../models/enums/dialog.enum';
 
 @Component({
   selector: 'lib-dialog',
@@ -10,13 +11,12 @@ import { DialogMode } from '@lib/shared';
   templateUrl: './dialog.component.html',
   styleUrl: './dialog.component.scss',
 })
-export class DialogLibrary implements OnInit {
+export class DialogLibrary {
   @Input() mode: DialogMode | undefined;
-  @Input() isOpen: boolean = false;
-  @Output() onClose = new EventEmitter<void>();
+  @Input() isOpen = false;
+  @Output() _onClose = new EventEmitter<void>();
 
   DialogMode = DialogMode;
-  ngOnInit(): void {}
   getBackgroundColor(): string {
     switch (this.mode) {
       case DialogMode.login:
@@ -29,6 +29,6 @@ export class DialogLibrary implements OnInit {
   }
 
   closeDialog() {
-    this.onClose.emit();
+    this._onClose.emit();
   }
 }
