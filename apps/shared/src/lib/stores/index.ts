@@ -1,2 +1,1 @@
-export * from './alerts'
-export * from './menu'
+export * from './alerts';

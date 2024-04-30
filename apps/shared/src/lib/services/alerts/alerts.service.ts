@@ -1,15 +1,12 @@
-import { Injectable } from "@angular/core";
-import { BehaviorSubject } from "rxjs";
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
-import { AlertInterface } from "../../stores";
-import { TranslationService } from "../translator/translator.service";
+import { AlertInterface } from '../../stores';
 
 @Injectable({
-  providedIn: "root",
+  providedIn: 'root',
 })
 export class NotificationService {
   private notificationsSubject = new BehaviorSubject<AlertInterface[]>([]);
   notifications$ = this.notificationsSubject.asObservable();
-  constructor(private translationService: TranslationService) { }
-  
 }
