@@ -1,0 +1,66 @@
+<div class="menu-category">
+  <h3>Pizzas</h3>
+  <div>
+    @for (pizza of carta.pizzas; track pizza) {
+    <div>
+      {{ pizza.name }} - {{ pizza.price | currency }}
+      <ul>
+        @if (pizza.ingredients && pizza.ingredients.length) { @for (ingredientId of pizza.ingredients; track
+        ingredientId) {
+        <li>{{ getIngredient(ingredientId) | translate }}</li>
+        } } @else {
+        <li>No ingredients listed.</li>
+        }
+      </ul>
+    </div>
+    }
+  </div>
+  <h3>Pasta</h3>
+  <div>
+    @for (pasta of carta.pasta; track pasta) {
+    <div>
+      {{ pasta.name }} - {{ pasta.price | currency }}
+      <ul>
+        @if (pasta.ingredients && pasta.ingredients.length) { @for (ingredientId of pasta.ingredients; track
+        ingredientId) {
+        <li>{{ getIngredient(ingredientId) | translate }}</li>
+        } } @else {
+        <li>No ingredients listed.</li>
+        }
+      </ul>
+    </div>
+    }
+  </div>
+  <h3>Sauces</h3>
+  <div>
+    @for (sauce of carta.sauces; track sauce) {
+    <div>
+      {{ sauce.name }} - {{ sauce.price | currency }}
+      <ul>
+        @if (sauce.ingredients && sauce.ingredients.length) { @for (ingredientId of sauce.ingredients; track
+        ingredientId) {
+        <li>{{ getIngredient(ingredientId) | translate }}</li>
+        } } @else {
+        <li>No ingredients listed.</li>
+        }
+      </ul>
+    </div>
+    }
+  </div>
+  <h3>Bruschettas</h3>
+  <div>
+    @for (bruschetta of carta.bruschettas; track bruschetta) {
+    <div>
+      {{ bruschetta.name }} - {{ bruschetta.price | currency }}
+      <ul>
+        @if (bruschetta.ingredients && bruschetta.ingredients.length) { @for (ingredientId of bruschetta.ingredients;
+        track ingredientId) {
+        <li>{{ getIngredient(ingredientId) | translate }}</li>
+        } } @else {
+        <li>No ingredients listed.</li>
+        }
+      </ul>
+    </div>
+    }
+  </div>
+</div>

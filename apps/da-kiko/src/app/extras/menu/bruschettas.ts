@@ -1,7 +1,7 @@
-import { Category } from '@lib/shared';
+import { Bruschetta, Category } from '@lib/shared';
 
-export const bruschettas = {
-  salmon: {
+export const bruschettas: Bruschetta[] = [
+  {
     id: 1,
     name: 'salmón',
     category: Category.BRUSCHETTA,
@@ -10,7 +10,7 @@ export const bruschettas = {
     description: '',
     special: false,
   },
-  jamon: {
+  {
     id: 2,
     name: 'jamón',
     category: Category.BRUSCHETTA,
@@ -19,4 +19,4 @@ export const bruschettas = {
     description: '',
     special: false,
   },
-};
+];

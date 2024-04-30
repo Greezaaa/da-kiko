@@ -1,7 +1,7 @@
-import { Category } from '@lib/shared';
+import { Category, Pasta } from '@lib/shared';
 
-export const pasta = {
-  spaghetti: {
+export const pasta: Pasta[] = [
+  {
     id: 1,
     name: 'Spaghetti',
     category: Category.PASTA,
@@ -9,7 +9,7 @@ export const pasta = {
     description: '',
     special: false,
   },
-  tagliatella: {
+  {
     id: 2,
     name: 'Tagliatella',
     category: Category.PASTA,
@@ -17,7 +17,7 @@ export const pasta = {
     description: '',
     special: false,
   },
-  gnocchi: {
+  {
     id: 3,
     name: 'Gnocchi',
     category: Category.PASTA,
@@ -25,4 +25,4 @@ export const pasta = {
     description: '',
     special: false,
   },
-};
+];

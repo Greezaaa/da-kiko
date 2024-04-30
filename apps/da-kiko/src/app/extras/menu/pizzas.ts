@@ -1,7 +1,7 @@
-import { Category } from '@lib/shared';
+import { Category, Pizza } from '@lib/shared';
 
-export const pizzas = {
-  margarita: {
+export const pizzas: Pizza[] = [
+  {
     id: 1,
     name: 'Margarita',
     category: Category.PIZZA,
@@ -10,7 +10,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  funghi: {
+  {
     id: 2,
     name: 'Funghi',
     category: Category.PIZZA,
@@ -19,7 +19,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  prosciutto: {
+  {
     id: 3,
     name: 'Prosciutto',
     category: Category.PIZZA,
@@ -28,16 +28,16 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  prosciutto_funghi: {
+  {
     id: 4,
-    name: 'Prosciutto e prosciutto_funghi',
+    name: 'Prosciutto e funghi',
     category: Category.PIZZA,
     ingredients: [2, 3, 5, 24, 25], // 'salsa de tomate', 'mozzarella', 'jamón york', 'champiñón', 'oregano'
     price: 0,
     description: '',
     special: false,
   },
-  peperoni: {
+  {
     id: 5,
     name: 'Peperoni',
     category: Category.PIZZA,
@@ -46,7 +46,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  pugliese: {
+  {
     id: 6,
     name: 'Pugliese',
     category: Category.PIZZA,
@@ -55,7 +55,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  sienna: {
+  {
     id: 7,
     name: 'Sienna',
     category: Category.PIZZA,
@@ -64,7 +64,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  beacon_cebolla: {
+  {
     id: 8,
     name: 'Beicon y Cebolla',
     category: Category.PIZZA,
@@ -73,7 +73,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  carbonara: {
+  {
     id: 9,
     name: 'Carbonara',
     category: Category.PIZZA,
@@ -82,7 +82,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  napolitana: {
+  {
     id: 10,
     name: 'Napolitana',
     category: Category.PIZZA,
@@ -91,7 +91,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  salmon: {
+  {
     id: 11,
     name: 'Salmon',
     category: Category.PIZZA,
@@ -100,7 +100,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  quattro_stagioni: {
+  {
     id: 12,
     name: 'Quattro Stagioni',
     category: Category.PIZZA,
@@ -109,7 +109,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  quattro_formaggi: {
+  {
     id: 13,
     name: 'Quattro Formaggi',
     category: Category.PIZZA,
@@ -118,7 +118,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  pesto: {
+  {
     id: 14,
     name: 'Pesto',
     category: Category.PIZZA,
@@ -127,7 +127,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  hawaiana: {
+  {
     id: 15,
     name: 'Hawaiana',
     category: Category.PIZZA,
@@ -136,7 +136,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  capricciosa: {
+  {
     id: 16,
     name: 'Capricciosa',
     category: Category.PIZZA,
@@ -145,7 +145,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  rucula_parmigiano: {
+  {
     id: 17,
     name: 'Rúcula y Parmigiano',
     category: Category.PIZZA,
@@ -154,7 +154,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  caprese: {
+  {
     id: 18,
     name: 'Caprese',
     category: Category.PIZZA,
@@ -163,7 +163,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  tonno: {
+  {
     id: 19,
     name: 'Tonno',
     category: Category.PIZZA,
@@ -172,7 +172,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  barbacoa: {
+  {
     id: 20,
     name: 'Barbacoa',
     category: Category.PIZZA,
@@ -181,7 +181,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  capri: {
+  {
     id: 21,
     name: 'Capri',
     category: Category.PIZZA,
@@ -190,7 +190,7 @@ export const pizzas = {
     description: '',
     special: false,
   },
-  Kiko: {
+  {
     id: 22,
     name: 'Kiko',
     category: Category.PIZZA,
@@ -199,4 +199,4 @@ export const pizzas = {
     description: '',
     special: true,
   },
-};
+];

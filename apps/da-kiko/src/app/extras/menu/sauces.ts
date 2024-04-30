@@ -1,7 +1,7 @@
-import { Category } from '@lib/shared';
+import { Category, Sauce } from '@lib/shared';
 
-export const sauces = {
-  napolitana: {
+export const sauces: Sauce[] = [
+  {
     id: 1,
     name: 'Napolitana',
     category: Category.SALSA,
@@ -10,7 +10,7 @@ export const sauces = {
     description: '',
     special: false,
   },
-  quattro_formaggi: {
+  {
     id: 2,
     name: 'Quattro Formaggi',
     category: Category.SALSA,
@@ -19,7 +19,7 @@ export const sauces = {
     description: '',
     special: false,
   },
-  sienna: {
+  {
     id: 3,
     name: 'Sienna',
     category: Category.SALSA,
@@ -28,7 +28,7 @@ export const sauces = {
     description: '',
     special: false,
   },
-  siciliana: {
+  {
     id: 4,
     name: 'Siciliana',
     category: Category.SALSA,
@@ -37,7 +37,7 @@ export const sauces = {
     description: '',
     special: false,
   },
-  bolognese: {
+  {
     id: 5,
     name: 'Bolognese',
     category: Category.SALSA,
@@ -46,7 +46,7 @@ export const sauces = {
     description: '',
     special: false,
   },
-  carbonara: {
+  {
     id: 6,
     name: 'Carbonara',
     category: Category.SALSA,
@@ -55,7 +55,7 @@ export const sauces = {
     description: '',
     special: false,
   },
-  salmon_gambas: {
+  {
     id: 7,
     name: 'Salmón y Gambas',
     category: Category.SALSA,
@@ -64,7 +64,7 @@ export const sauces = {
     description: '',
     special: false,
   },
-  pesto: {
+  {
     id: 8,
     name: 'Al Pesto',
     category: Category.SALSA,
@@ -73,7 +73,7 @@ export const sauces = {
     description: '',
     special: false,
   },
-  Gorgonzola: {
+  {
     id: 9,
     name: 'Gorgonzola',
     category: Category.SALSA,
@@ -82,7 +82,7 @@ export const sauces = {
     description: '',
     special: false,
   },
-  Kiko: {
+  {
     id: 10,
     name: 'Kiko',
     category: Category.SALSA,
@@ -91,4 +91,4 @@ export const sauces = {
     description: '',
     special: true,
   },
-};
+];

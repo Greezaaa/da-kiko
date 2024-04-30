@@ -22,7 +22,7 @@ export const ingredients: Ingredient[] = [
   },
   {
     id: 5,
-    name: 'jamón_york',
+    name: 'jamon_york',
   },
   {
     id: 6,
@@ -98,7 +98,7 @@ export const ingredients: Ingredient[] = [
   },
   {
     id: 24,
-    name: 'champinón',
+    name: 'champinon',
   },
   {
     id: 25,
