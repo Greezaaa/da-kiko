@@ -8,10 +8,7 @@ import { LayoutHeaderComponent } from '../header/header.component';
   standalone: true,
   imports: [RouterModule, LayoutHeaderComponent, LayoutMainComponent, LayoutFooterComponent],
   selector: 'kiko-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  templateUrl: 'app.component.html',
+  styleUrl: 'app.component.scss',
 })
-export class AppComponent {
-  title = 'da-kiko pasta e pizza';
-  
-}
+export class AppComponent {}

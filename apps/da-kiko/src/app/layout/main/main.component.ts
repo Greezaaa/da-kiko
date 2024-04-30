@@ -1,19 +1,13 @@
-import { CommonModule } from "@angular/common";
-import { Component, inject } from "@angular/core";
-import {
-  AlertFacade,
-  AlertsLibrary,
-  AlertType,
-  TranslatePipe,
-} from "@lib/shared";
-
-import { CartaComponent } from "../../components/carta/carta.component";
+import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { AlertFacade, AlertsLibrary, AlertType } from '@lib/shared';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   standalone: true,
-  selector: "kiko-layout-main",
-  templateUrl: "./main.component.html",
-  imports: [TranslatePipe, CommonModule, AlertsLibrary, CartaComponent],
+  selector: 'kiko-layout-main',
+  templateUrl: 'main.component.html',
+  imports: [CommonModule, AlertsLibrary, TranslateModule],
 })
 export class LayoutMainComponent {
   private readonly alertFacade = inject(AlertFacade);

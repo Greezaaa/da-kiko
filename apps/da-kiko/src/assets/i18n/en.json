@@ -5,7 +5,8 @@
   },
   "nav": {
     "contact": "Contact Us",
-    "home": "Home"
+    "home": "Home",
+    "menu": "Menu"
   },
   "alerts": {
     "success": "Operation successful!",
@@ -16,106 +17,51 @@
   },
   "menu": {
     "menu": "Explore Our Menu",
+    "extra": "Each extra Ingredient",
+    "pizzas": {
+      "name": "Pizzas",
+      "desc": "Our pizzas are the best"
+    },
     "ingredients": {
-      "name": "Ingredients",
-      "tooltip": "Select ingredients to include in your dish. We'll tailor the dish to your preference.",
-      "tomato": "Tomato",
-      "chicken": "Chicken",
-      "basil": "Basil",
+      "pan_tostado": "Toasted Bread",
+      "tomate_salsa": "Tomato Sauce",
       "mozzarella": "Mozzarella",
-      "spaghetti": "Spaghetti"
-    },
-    "allergens": {
-      "name": "Allergens",
-      "tooltip": "Select allergens to exclude from your dishes. This helps in preventing allergic reactions.",
-      "gluten": {
-        "name": "Gluten",
-        "description": "Includes foods that contain gluten, such as most cereals, breads, and pastas."
-      },
-      "fish": {
-        "name": "Fish",
-        "description": "Covers all types of fish. Important for people with fish allergies."
-      },
-      "crustaceans": {
-        "name": "Crustaceans",
-        "description": "Includes shrimp, crabs, lobster, and other crustaceans."
-      },
-      "eggs": {
-        "name": "Eggs",
-        "description": "Present in many dishes and baked products, egg allergy is common."
-      },
-      "soy": {
-        "name": "Soy",
-        "description": "Frequently used in processed products and sauces."
-      },
-      "peanuts": {
-        "name": "Peanuts",
-        "description": "Common allergen that can cause severe reactions."
-      },
-      "tree_nuts": {
-        "name": "Tree Nuts",
-        "description": "Includes almonds, hazelnuts, walnuts, cashews, pistachios, macadamia nuts, and Brazil nuts."
-      },
-      "dairy": {
-        "name": "Dairy",
-        "description": "Includes milk and dairy products such as cheese, butter, and yogurt."
-      },
-      "mustard": {
-        "name": "Mustard",
-        "description": "Commonly used in sauces and dressings."
-      },
-      "celery": {
-        "name": "Celery",
-        "description": "Includes both fresh celery and derivatives used in processed foods."
-      },
-      "sulfites": {
-        "name": "Sulfites",
-        "description": "Commonly used as preservatives in foods and drinks."
-      },
-      "sesame": {
-        "name": "Sesame",
-        "description": "Can be found in breads, cookies, and tahini products."
-      },
-      "lupin": {
-        "name": "Lupin",
-        "description": "Often used in flours and some processed meats."
-      },
-      "molluscs": {
-        "name": "Molluscs",
-        "description": "Includes snails, clams, oysters, and mussels."
-      },
-      "spicy": {
-        "name": "Spicy",
-        "description": "Foods containing spices or peppers that provide a spicy flavor."
-      }
-    },
-    "dishes": {
-      "name": "Dishes",
-      "tooltip": "Browse through our variety of dishes."
-    },
-    "category": {
-      "name": "Categories",
-      "tooltip": "Select a category to view the dishes available.",
-      "pizzas": {
-        "name": "Pizzas",
-        "description": "Deliciously handcrafted pizzas baked to perfection with fresh ingredients and a variety of toppings to choose from."
-      },
-      "pastas": {
-        "name": "Pasta",
-        "description": "Explore our range of classic and contemporary pasta dishes, each prepared with fresh pasta and the finest sauces."
-      },
-      "extras": {
-        "name": "Extras",
-        "description": "Add the perfect complement to your meal with our selection of extras, including breadsticks, sauces, and more."
-      },
-      "desserts": {
-        "name": "Desserts",
-        "description": "Indulge in our decadent desserts, a perfect way to conclude your meal. Choose from our selection of cakes, pastries, and ice creams."
-      },
-      "drinks": {
-        "name": "Drinks",
-        "description": "Quench your thirst with our assortment of beverages. From hot coffees to refreshing cocktails, we have drinks to suit all tastes."
-      }
+      "salmon": "Salmon",
+      "jamon_york": "Ham",
+      "ajo": "Garlic",
+      "albahaca": "Basil",
+      "4_quesos": "Four Cheeses",
+      "bechamel": "Bechamel",
+      "calabacin": "Zucchini",
+      "perejil": "Parsley",
+      "berenjena": "Eggplant",
+      "picante": "Spicy",
+      "carne_picada": "Ground Beef",
+      "beicon": "Bacon",
+      "yema_huevo": "Egg Yolk",
+      "salsa_tomate": "Tomato Sauce",
+      "gambas": "Shrimps",
+      "pinones": "Pine Nuts",
+      "queso_parmesano": "Parmesan Cheese",
+      "aceite_oliva": "Olive Oil",
+      "crema_nueces": "Walnut Cream",
+      "pollo": "Chicken",
+      "champinon": "Mushroom",
+      "oregano": "Oregano",
+      "peperoni": "Pepperoni",
+      "cebolla": "Onion",
+      "aceitunas_negra": "Black Olives",
+      "huevo": "Egg",
+      "anchoas": "Anchovies",
+      "alcachofas": "Artichokes",
+      "pina": "Pineapple",
+      "jamon_serrano": "Serrano Ham",
+      "rucula": "Arugula",
+      "queso_fresco": "Fresh Cheese",
+      "atun": "Tuna",
+      "salsa_barbacoa": "Barbecue Sauce",
+      "nata": "Cream",
+      "tomate_cherry": "Cherry Tomatoes"
     }
   }
 }
